@@ -795,3 +795,16 @@ Processing by SongsController#new as HTML
   Rendered songs/_form.html.erb (24.6ms)
   Rendered songs/new.html.erb within layouts/application (29.3ms)
 Completed 200 OK in 35ms (Views: 34.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/artists/1/songs" for 96.230.191.165 at 2018-02-03 16:01:44 +0000
+Cannot render console from 96.230.191.165! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+SyntaxError (/home/Mathwell/modification-nested-routes-lab-v-000/app/controllers/songs_controller.rb:18: `@' without identifiers is not allowed as an instance variable name
+/home/Mathwell/modification-nested-routes-lab-v-000/app/controllers/songs_controller.rb:18: syntax error, unexpected end-of-input
+      @ artist = Artist.find(params[:artist_id])
+        ^):
+  app/controllers/songs_controller.rb:18: `@' without identifiers is not allowed as an instance variable name
+  app/controllers/songs_controller.rb:18: syntax error, unexpected end-of-input
+
+
